@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com</groupId>
+  <artifactId>BDD_Parallel_CICD_Framework</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>BDD_Parallel_CICD_Framework</name>
+  <url>http://www.example.com</url>
+
+ 
+ <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+     <cucumber>5.7.0</cucumber>
+		<webdrivermanager.version>6.3.2</webdrivermanager.version>
+		<maven.compiler.plugin.version>3.10.1</maven.compiler.plugin.version>
+		<maven.surefire.plugin.version>3.0.0-M7</maven.surefire.plugin.version>
+		<maven.compiler.source>23</maven.compiler.source>
+		<maven.compiler.target>23</maven.compiler.target>
+		<selenium.version>4.35.0</selenium.version>
+	<testng.version>7.10.2</testng.version> 
+  </properties>
+  
+  
+  <dependencies>
+  
+  <!-- AI Powered Tools-->
+  
+  <!-- https://mvnrepository.com/artifact/com.epam.healenium/healenium-web -->
+<dependency>
+    <groupId>com.epam.healenium</groupId>
+    <artifactId>healenium-web</artifactId>
+    <version>3.5.7</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.epam.healenium/healenium-appium -->
+<dependency>
+    <groupId>com.epam.healenium</groupId>
+    <artifactId>healenium-appium</artifactId>
+    <version>1.5.15</version>
+</dependency>
+
+  <!-- https://mvnrepository.com/artifact/com.applitools/eyes-selenium-java5 -->
+<dependency>
+    <groupId>com.applitools</groupId>
+    <artifactId>eyes-selenium-java5</artifactId>
+    <version>5.81.8</version>
+</dependency>
+  
+  
+ 
+<!--  <dependency>-->
+<!--        <groupId>org.testng</groupId>-->
+<!--        <artifactId>testng</artifactId>-->
+<!--        <version>7.10.2</version>-->
+<!--        <scope>test</scope>-->
+<!--    </dependency>-->
+ 
+ 
+  
+  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>${selenium.version}</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/junit/junit -->
+<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.13.2</version>
+    <scope>test</scope>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>5.7.0</version>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-core</artifactId>
+    <version>5.7.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>5.7.0</version>
+    <scope>test</scope>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>5.7.0</version>
+</dependency>
+  
+
+<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>${webdrivermanager.version}</version>
+</dependency>
+  
+  
+<!--  https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>${testng.version}</version>
+    <scope>test</scope>
+</dependency> 
+  
+  
+  <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>5.5.1</version>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml-schemas</artifactId>
+    <version>4.1.2</version>
+</dependency>
+
+  
+  
+	<dependency>
+				<groupId>tech.grasshopper</groupId>
+				<artifactId>extentreports-cucumber5-adapter</artifactId>
+				<version>2.15.0</version>
+			</dependency>
+
+
+  
+  	<!--
+			https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-core</artifactId>
+				<version>2.24.1</version>
+			</dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-simple</artifactId>
+    <version>2.0.17</version>
+    <scope>test</scope>
+</dependency>
+  
+  		<dependency>
+				<groupId>com.aventstack</groupId>
+				<artifactId>extentreports</artifactId>
+				<version>5.1.2</version>
+			</dependency>
+  
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-picocontainer</artifactId>
+    <version>5.7.0</version>
+</dependency>
+
+
+
+<!--API REST ASSURED Depedencys-->
+
+  <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>5.5.5</version>
+    <scope>test</scope>
+</dependency>
+
+
+ <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.10.2</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest -->
+<dependency>
+    <groupId>org.hamcrest</groupId>
+    <artifactId>hamcrest</artifactId>
+    <version>2.2</version>
+
+</dependency>  
+
+
+
+
+  </dependencies>
+
+
+
+
+
+ <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M7</version>
+        
+        <configuration>
+        
+       <systemPropertyVariables>
+                    <env>${env}</env>
+                    <browser>${browser}</browser>
+                </systemPropertyVariables>
+	
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</project>
