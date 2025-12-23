@@ -33,7 +33,12 @@ public class Formpage {
 	
 	@FindBy(xpath = "//textarea[@id=\"country\"]")	
 	private WebElement txtCountry;
-
+	
+	@FindBy(xpath = "//textarea[@id=\"states\"]")	
+	private WebElement txtState;
+	
+	@FindBy(xpath = "//textarea[@id=\"city\"]")	
+	private WebElement txtCity;
 
 	public void enterFirstname(String firstname) {
 		txtFirstname.clear();
