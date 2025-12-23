@@ -30,6 +30,9 @@ public class Formpage {
 
 	@FindBy(xpath = "//textarea[@id=\"address\"]")	
 	private WebElement txtAddress;
+	
+	@FindBy(xpath = "//textarea[@id=\"country\"]")	
+	private WebElement txtCountry;
 
 
 	public void enterFirstname(String firstname) {
