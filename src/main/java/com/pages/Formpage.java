@@ -21,6 +21,14 @@ public class Formpage {
 	
     @FindBy(xpath = "//input[@id=\"lastName\"]")
 	private WebElement txtLastname;
+    
+    @FindBy(xpath = "//input[@id=\"email\"]")
+	private WebElement textEmail;
+
+	public void enterEmail(String email) {
+		textEmail.clear();
+		textEmail.sendKeys(email);
+	}
 	
 	
 	
