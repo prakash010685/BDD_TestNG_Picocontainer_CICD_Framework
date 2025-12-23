@@ -24,14 +24,17 @@ public class Formpage {
     
     @FindBy(xpath = "//input[@id=\"email\"]")
 	private WebElement textEmail;
+    
+    @FindBy(xpath = "//input[@id=\"phonenumber\"]")
+	private WebElement txtPhonenumber;
 
-	public void enterEmail(String email) {
-		textEmail.clear();
-		textEmail.sendKeys(email);
-	}
+	@FindBy(xpath = "//textarea[@id=\"address\"]")	
+	private WebElement txtAddress;
 	
-	
-	
+	@FindBy(xpath = "//textarea[@id=\"country\"]")	
+	private WebElement txtCountry;
+
+
 	public void enterFirstname(String firstname) {
 		txtFirstname.clear();
 		txtFirstname.sendKeys(firstname);
@@ -42,5 +45,21 @@ public class Formpage {
 		txtLastname.clear();
 		txtLastname.sendKeys(lastname);
 	}
+	
+	public void enterPhonenumber(String phonenumber) {
+		txtPhonenumber.clear();
+		txtPhonenumber.sendKeys(phonenumber);
+	}
+	
+	public void enterAddress(String address) {
+		txtAddress.clear();
+		txtAddress.sendKeys(address);
+	}
+	
+	public void enterEmail(String email) {
+		textEmail.clear();
+		textEmail.sendKeys(email);
+	}
+	
 
 }
